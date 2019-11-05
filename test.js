@@ -21,4 +21,5 @@ logger.table([
     ['x', 1],
     ['loonnnnng first value', 2],
     ['c', 'loooooonnnnng second value'],
+    [3, 'a'],
 ]);
