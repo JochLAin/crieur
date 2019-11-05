@@ -10,8 +10,15 @@ logger.warning('Warning message');
 logger.error('Error message');
 logger.success('Success message');
 
-logger.debug('Debug message', { block: true });
-logger.info('Info message', { block: true });
-logger.warning('Warning message', { block: true });
-logger.error('Error message', { block: true });
-logger.success('Success message', { block: true });
+logger.debug('Debug block', { block: true });
+logger.info('Info block', { block: true });
+logger.warning('Warning block', { block: true });
+logger.error('Error block', { block: true });
+logger.success('Success block', { block: true });
+
+logger.table([
+    ['Nom', 'Valeur'],
+    ['x', 1],
+    ['loonnnnng first value', 2],
+    ['c', 'loooooonnnnng second value'],
+]);
