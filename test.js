@@ -6,15 +6,15 @@ logger.log('Hello world');
 
 logger.debug('Debug message');
 logger.info('Info message');
+logger.success('Success message');
 logger.warning('Warning message');
 logger.error('Error message');
-logger.success('Success message');
 
 logger.debug('Debug block', { block: true });
 logger.info('Info block', { block: true });
+logger.success('Success block', { block: true });
 logger.warning('Warning block', { block: true });
 logger.error('Error block', { block: true });
-logger.success('Success block', { block: true });
 
 logger.table([
     ['Nom', 'Valeur'],
@@ -23,3 +23,8 @@ logger.table([
     ['c', 'loooooonnnnng second value'],
     [3, 'a'],
 ]);
+
+logger.level = 1;
+logger.debug('Debug message');
+logger.info('Info message');
+logger.success('Success message');
