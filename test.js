@@ -9,6 +9,7 @@ logger.info('Info message');
 logger.success('Success message');
 logger.warning('Warning message');
 logger.error('Error message');
+logger.error(new Error('Message\n  with comment'));
 
 logger.debug('Debug block', { block: true });
 logger.info('Info block', { block: true });
