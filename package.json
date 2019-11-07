@@ -1,6 +1,6 @@
 {
   "name": "crieur",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Console logger",
   "main": "lib/index.js",
   "scripts": {
