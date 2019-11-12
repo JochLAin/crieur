@@ -1,5 +1,13 @@
 #!/usr/bin/env node
 
+class DetailedError extends Error {
+    constructor(message, detail, ...props) {
+        super(message, ...props);
+        this.name = 'DetailedError';
+        this.detail = detail;
+    }
+}
+
 const logger = require('./lib');
 
 logger.log('Hello world');
@@ -10,6 +18,7 @@ logger.success('Success message');
 logger.warning('Warning message');
 logger.error('Error message');
 logger.error(new Error('Message\n  with comment'));
+logger.error(new DetailedError('Error message', '  Error detail'));
 
 logger.debug('Debug block', { block: true });
 logger.info('Info block', { block: true });
