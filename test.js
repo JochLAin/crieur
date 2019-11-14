@@ -18,7 +18,7 @@ logger.success('Success message');
 logger.warning('Warning message');
 logger.error('Error message');
 logger.error(new Error('Message\n  with comment'));
-logger.error(new DetailedError('Error message', '  Error detail'));
+logger.error(new DetailedError('Error message', 'Error detail'));
 
 logger.debug('Debug block', { block: true });
 logger.info('Info block', { block: true });
