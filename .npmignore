@@ -1,5 +1,12 @@
 /.idea/
+.git
 .gitignore
+
+.babelrc
+.eslintrc.js
+/assets/
+/public/
+test.js
 
 # Logs
 logs
